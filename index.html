@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Changa:500&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+    </style>
+    <meta charset="utf-8">
+    <meta name="author" content="Jacky Guo 201635107, Shreshth Kumar">
+    <meta name="description" content="A simple page on Computer Science, for the course requirements of COMP 2511">
+    <meta name="keywords" content="computer, science, program, job, opportunities">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Computer Science - Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <button class="bars"><i class="fa fa-bars"></i></button>
+            <div>
+                <a class="Home" href="index.html">Home</a>
+                <a href="jobOpportunities.html">Job Opportunities</a>
+                <a href="programming.html">Programming</a>
+            </div>
+        </div>
+        <img src="images/cs_logo.png" alt="" id="csLogo">
+    </header>
+    <main>
+        <div class="mainBack">
+            <figure>
+                <img src="images/background.jpg" alt="">
+                <figcaption>“The computer was born to solve problems that did not exist before.”<br> — Bill Gates
+                </figcaption>
+            </figure>
+        </div>
+        <div class="container">
+            <section class="whatComSci">
+                <fieldset>
+                    <h4>What is Computer Science?</h4>
+                    <p class="intro">
+                        Computer Science is the study of computers focusing on software and hardware. There are multiple areas of study within the computer science major such as:
+                    </p>
+                    <ul>
+                        <li>Artificial Intelligence</li>
+                        <li>Network Infratucture</li>
+                        <li>Computer Security</li>
+                        <li>Programming Languages</li>
+                    </ul>
+                    <p>
+                        The key purpose of the degree to identify problems and create algorithms and study the performance of computer hardware and software.
+                    </p>
+                    <p>
+                        The computer science major is also a very well paying field of study (figure 1.1)
+                    </p>
+                </fieldset>
+            </section>
+
+            <section class="earningStat">
+                <figure>
+                    <img src="images/CS_stat.png" alt="Computer Science earning stats " title="obtained from https://csedweek.org/resource_kit/blurbs" height="281" width="500">
+                    <figcaption>Figure 1.1 - CS major earnings</figcaption>
+                </figure>
+            </section>
+            <section class="whyCompSci">
+                <fieldset>
+                    <h5> Why study Computer Science</h5>
+                    <p>Computer Science is a field of study the opportunities are endless in the sense that since technology is improving rapidly the need for people who can understand the technology. Computer Science also provides the skill of problem solving
+                        which is a very important life skill. If we look around us there is technology everywhere, ranging from a smart speaker to a supercomputer at NASA. A very important aspect of computer science is that we take old devices and improve
+                        them to work up to our standards, for example: <br> In 1956 IBM developed a hard-drive that cost $10,100 and it had a maximum capacity of 5MB. As a result of techonological innovation Seagate has delveloped a $600 hard drive with
+                        a capacity of 16TB!
+                    </p>
+                </fieldset>
+            </section>
+            <section class="table">
+                <fieldset>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Pros and Cons of Computer Science Degree</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Applicable in a variety of fields</td>
+                                <td>Large time investment</td>
+                            </tr>
+                            <tr>
+                                <td>Highly demanded in current<br> technologically inclined society</td>
+                                <td>Requires consistent learning and practice</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </section>
+        </div>
+        <article>
+            <section class="form">
+                <fieldset>
+                    <h6>
+                        Want to learn more about Computer Science? Contact Us! Input your information below:
+                    </h6>
+                    <label id="required">Asterisks indicate a required field.</label>
+                    <form method="POST" action="mailto:skuma841@mtroyal.ca">
+
+                        <input type="hidden" name="subject" value="New subscriber" />
+                        <p>
+                            <label id="required">Name:
+                                <input name="name" type="text" size="25" maxlength="30" placeholder="Tim Apple"
+                                    required />
+                            </label>
+                        </p>
+                        <p>
+                            <label id="required"> E-mail:
+                                <input name="email" type="email" size="25" placeholder="SteveJobs@microsoft.ca"
+                                    required />
+                            </label>
+                        </p>
+                        <p>
+                            <label>Phone Number:
+                                <input name="tel" type="tel" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"
+                                    placeholder="403-155-1555" />
+                            </label>
+                        </p>
+                        <p>
+                            <label> What do you want to know?
+                                <input name="instructions" type="text" placeholder="Input here any questions" />
+                            </label>
+                        </p>
+                        <input id="btnSubmit" type="submit" value="Submit" />
+                    </form>
+                </fieldset>
+            </section>
+        </article>
+    </main>
+
+
+    <footer>
+        <p><em>Copyright &copy; 2020 Guo, J., Kumar S.</em></p>
+    </footer>
+</body>
+
+</html>

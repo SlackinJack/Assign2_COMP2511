@@ -1,0 +1,263 @@
+:root {
+    --backColor: midnightblue;
+    --headColor: white;
+    --hoverColor: white;
+    --containerBack: #cce6ff;
+    --blockColor: #81b8e5;
+    font-family: 'Changa', sans-serif;
+}
+
+h1 {
+    background-color: var(--backColor);
+    display: flex;
+}
+
+
+/* header and menu drop down */
+
+#csLogo {
+    width: 75px;
+    height: 75px;
+    margin-left: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+}
+
+#menu {
+    left: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.siteDescription {
+    text-align: center;
+    font-family: 'Changa', sans-serif;
+    background-color: var(--backColor);
+    color: var(--headColor);
+    padding: 8px;
+}
+
+header {
+    background-color: var(--backColor);
+    display: flex;
+}
+
+.bars {
+    justify-content: space-between;
+    background-color: var(--backColor);
+    border: none;
+    color: white;
+    padding-left: 20px;
+    font-size: 30px;
+    padding-top: 24px;
+}
+
+.dropdown div {
+    background-color: var(--backColor);
+    width: 150px;
+    box-shadow: gray;
+    z-index: 1;
+    display: none;
+    padding-top: 20px;
+}
+
+.dropdown:hover div {
+    display: block;
+}
+
+.dropdown div a {
+    display: block;
+    text-decoration: none;
+    color: grey;
+    padding: 6px 8px 6px 16px;
+    font-size: 22px;
+}
+
+.dropdown div a:hover {
+    color: white;
+}
+
+footer {
+    background-color: var(--backColor);
+    color: var(--headColor);
+    padding: 1px;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    background-color: var(--containerBack);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.mainBack img {
+    width: 100%;
+    background-size: cover;
+}
+
+.mainBack figure {
+    margin-top: 6px;
+    width: 100%;
+    text-align: center;
+}
+
+.mainBack figcaption {
+    color: var(--headColor);
+    font-size: 40px;
+    margin-top: -6.0em;
+    z-index: 1;
+    height: 5.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: right;
+    margin-right: 28px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 30px;
+    text-align: center;
+}
+
+figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+th,
+td {
+    border: 1px solid black;
+    background-color: var(--blockColor);
+}
+
+p.intro::first-letter {
+    color: midnightblue;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+
+/* grid */
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--containerBack);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: larger;
+}
+
+.whatComSci {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-color: var(--blockColor);
+}
+
+.earningStat {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.earningStat figure {
+    width: auto;
+}
+
+.whyCompSci {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: var(--blockColor);
+}
+
+.table {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+
+/* form css */
+
+.form {
+    background-color: var(--containerBack);
+    background: url("images/form_image.jpg");
+    background-size: cover;
+    width: 100%;
+}
+
+form {
+    font-family: 'Roboto Slab', serif;
+}
+
+h6 {
+    font-family: 'Roboto Slab', serif;
+    text-align: left;
+    width: 45%;
+}
+
+input[value] {
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    width: 20vh;
+    height: 3vh;
+}
+
+@media (max-width: 1200px) {
+    body {
+        width: auto;
+    }
+    main {
+        width: 100%;
+    }
+    .container {
+        grid-template-columns: 1;
+        grid-template-rows: 4;
+        width: 100%;
+    }
+    .whatComSci {
+        grid-row: 1;
+        grid-column: 1 /span 2;
+    }
+    .earningStat {
+        grid-row: 2;
+        grid-column: 1 /span 2;
+    }
+    .whyCompSci {
+        grid-row: 3;
+        grid-column: 1 /span 2;
+    }
+    .table {
+        grid-row: 4;
+        grid-column: 1 /span 2;
+    }
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+input:required {
+    border: 2px red solid;
+}
+
+input {
+    border: 2px black solid;
+    width: 200px;
+    margin-left: 5px;
+}
+
+#required:before {
+    content: "* ";
+    color: red;
+}
